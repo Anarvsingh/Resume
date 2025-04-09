@@ -1,0 +1,200 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=1.4cm]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.15in}
+\addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small #1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{0pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Anarv Singh} \\[2mm]
+    \footnotesize \raisebox{-0.1\height}
+    \faMapMarker\ \underline{Chicago, IL} ~
+    \faMobile\ \underline{+1 (312)371-1745} ~
+    {\faEnvelope\ \underline{anarvsingh@outlook.com}} ~
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/anarv-s-91811a173/}{LinkedIn}}} ~
+    {\faGithub\ \underline{\href{https://github.com/Anarvsingh}{GitHub}}} ~
+    }
+    
+    \vspace{-15pt}
+\end{center}
+\vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education} \\[1mm]
+\resumeSubHeadingListStart 
+  \resumeSubheading
+    {Illinois Institute of Technology}{Expected Graduation: May 2025}
+    {Master’s In Computer Science}{Chicago, USA}
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+\resumeItemListStart
+  \resumeItem {Awarded Graduate Pathway Scholarship for academic excellence}
+  \vspace{-9pt}
+  \resumeItem {Courses: Database Organization, Machine Learning, Operating Systems, Software Project Management, Big Data, Algorithms and Data Structures, Advanced Database Organization, Data Communications}
+\resumeItemListEnd
+
+\resumeSubHeadingListStart
+\vspace{-10pt}
+  \resumeSubheading
+    {SRM Institute of Science and Technology}{May 2020}
+    {Bachelor of Computer Engineering}{Chennai, India}
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+\resumeItemListStart
+  \resumeItem {Courses: Computer Networks, Operating Systems, Computer Architecture, Java Programming, Algorithms and Data Structures, Database Management System}
+\resumeItemListEnd
+\vspace{-15pt}
+
+
+%-----------WORK EXPERIENCE---------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Conga}{Aug 2022 – July 2023}{Associate Developer}{India} 
+  \resumeItemListStart
+    \resumeItem{Developed and maintained front-end features (React.js, TypeScript) and server-side logic (Java, Node.js) for Conga CLM, enabling \textbf{2,000+} users to generate PDF, RTF, and DOCX files with a single click, enhancing usability and scalability.}
+    \resumeItem{Built backend services with Java and SQL, optimizing a scheduling system for \textbf{4,000+} products, achieving an 18\% performance boost and ensuring global scalability via event-driven updates.}
+    \resumeItem{Led migration of pricing operations to Conga Turbo API using Java and AWS (S3, API Gateway), delivering a \textbf{40\%} performance increase and integrating with CI/CD pipelines for rapid deployment.}
+    \resumeItem{Collaborated with senior engineers and product managers in an Agile environment, contributing to code reviews and delivering production-level solutions with Java, React.js, SQL, and Salesforce.}
+  \resumeItemListEnd
+
+  \vspace{-7pt} % Adjust vertical space as needed
+  \resumeSubheading{HCL Tech}{Dec 2020 - July 2022}{Analyst}{India} 
+  \resumeItemListStart
+    \resumeItem{Designed production-level backend services with Java and Node.js, including a Spring Batch tool that processed customer records, boosting efficiency by \textbf{37\%} and supporting scalable workflows.}
+    \resumeItem{Built a responsive front-end webpage (React.js, JavaScript) and server-side logic (Node.js, SQL), streamlining quote finalization and integrating with automated CI/CD pipelines (e.g., Jenkins-like).}
+    \resumeItem{Conducted root cause analysis for pricing issues, troubleshooting with logs and metrics, and provided feedback in team code reviews to enhance service reliability.}
+    \resumeItem{Worked with cross-functional teams to gather requirements, delivering SOA-based solutions using REST APIs and AWS infrastructure with Java, React.js, and Node.js.}
+  \resumeItemListEnd
+\vspace{-12pt} % Adjust vertical space as needed
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects} 
+\vspace{-9pt}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+  {\textbf{HelpBot} $|$ \href{https://github.com/Anarvsingh/HelpBot}{\underline{View Project}}}
+  {Next.js $|$ TypeScript $|$ Node.js $|$ LangChain}
+  \\[5mm]
+\resumeItemListStart
+  \resumeItem{Built a real-time AI chat app with front-end UIs (Next.js, React 19) and backend logic (Node.js), integrating LangChain and Claude 3.5 for event-driven responses and low-latency data flows.}
+  \resumeItem{Enhanced scalability with Convex and AWS (API Gateway-like), reducing response latency and streamlining production-level deployment with reusable components.}
+  \resumeItem{Shared optimization strategies with peers, improving developer productivity through TypeScript and Node.js integrations (wxflows, Google Books API).}
+\resumeItemListEnd
+
+\vspace{-12pt}
+\resumeProjectHeading
+  {\textbf{SkillCheck} $|$ \href{https://github.com/Anarvsingh/SkillCheck2}{\underline{View Project}}}
+  {Next.js $|$ TypeScript $|$ Node.js $|$ Docker}
+  \\[5mm]
+\resumeItemListStart
+  \resumeItem{Engineered a full-stack interview platform with front-end (Next.js, TypeScript) and backend (Node.js, Convex) logic, supporting \textbf{200+} concurrent users with real-time video (Stream SDK) and event-driven data flows.}
+  \resumeItem{Optimized performance to sub-2-second video setup, leveraging AWS (S3 for storage) and CI/CD pipelines with Docker for scalable deployment.}
+  \resumeItem{Guided collaborators on integrating 4+ services (Clerk Auth, Convex), resolving conflicts (e.g., date-fns v4), and ensuring robust schema design with Convex and Node.js.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{   
+    \textbf{Languages}{: C/C++, Java, SQL, HTML5, CSS, JavaScript, Python, TypeScript, Go \\[1mm]
+    \textbf{Developer Tools}{: AWS,Git, Postman, Salesforce, Jira, CI/CD, Linux, Docker} \\[1mm]
+    \textbf{Libraries/Frameworks}{: ReactJS, Tailwind CSS, REST API, PostgreSQL, NextJS, NodeJS, Springboot} \\[1mm]
+  }}
+\end{itemize}
+\vspace{-16pt}
+\vspace{3pt}
+\vspace{10pt}
+
+\vspace{-15pt}
+
+\end{document}
