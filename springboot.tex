@@ -1,0 +1,199 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=1.4cm]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.15in}
+\addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small #1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{0pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Anarv Singh} \\[2mm]
+    \footnotesize \raisebox{-0.1\height}
+    \faMapMarker\ \underline{Chicago, IL} ~
+    \faMobile\ \underline{+1 (312)371-1745} ~
+    {\faEnvelope\ \underline{anarvsingh@gmail.com}} ~
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/anarv-s-91811a173/}{LinkedIn}}} ~
+    {\faGithub\ \underline{\href{https://github.com/Anarvsingh}{GitHub}}} ~
+    }
+    
+    \vspace{-15pt}
+\end{center}
+\vspace{-15pt}
+
+%-----------EDUCATION-----------
+\section{Education} \\[1mm]
+\resumeSubHeadingListStart 
+  \resumeSubheading
+    {Illinois Institute of Technology}{ May 2025}
+    {Master’s In Computer Science}{Chicago, USA}
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+\resumeItemListStart
+  \resumeItem {Awarded Graduate Pathway Scholarship for academic excellence}
+  \vspace{-9pt}
+  \resumeItem {Courses: Operating Systems, Algorithms and Data Structures, Database Organization, Advanced Database Organization, Software Project Management, Data Communications}
+\resumeItemListEnd
+
+\resumeSubHeadingListStart
+\vspace{-10pt}
+  \resumeSubheading
+    {SRM Institute of Science and Technology}{May 2020}
+    {Bachelor of Computer Engineering}{Chennai, India}
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+\resumeItemListStart
+  \resumeItem {Courses: Computer Networks, Operating Systems, Computer Architecture, Java Programming, Algorithms and Data Structures}
+\resumeItemListEnd
+\vspace{-15pt}
+
+%-----------WORK EXPERIENCE---------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading{Conga}{Aug 2022 – July 2023}{Associate Developer}{India} 
+  \resumeItemListStart
+    \resumeItem{Developed real-time claim status updates using Spring Boot and Java, enhancing transparency and client satisfaction.}
+  \resumeItem{Worked on REST APIs and developed business features with Spring Boot, improving system functionality.}
+    \resumeItem{Integrated Redis cache with Spring Boot for efficient data caching, significantly boosting application performance and reducing database load.}
+    \resumeItem{Participated in Agile sprints and code reviews with cross-functional teams, integrating REST APIs and React.js to support scalable, high-performance solutions.}
+  \resumeItemListEnd
+
+  \vspace{-7pt}
+  \resumeSubheading{HCL Tech}{Dec 2020 – July 2022}{Analyst}{India} 
+  \resumeItemListStart
+      \resumeItem{Worked on the implementation of live tracking system using Kafka, enhancing decision-making speed.}
+    \resumeItem{Built real-time integrations with SpringBoot and REST APIs, optimizing data flows with PostgreSQL for reliability and scalability in a CI/CD pipeline.}
+    \resumeItem{Performed root cause analysis with Splunk and SLF4J, enhancing system performance and collaborating on test plans with a 4-person Agile team.}
+    \resumeItem{Written Unit test cases to ensure code quality and reliability across all implemented features.}
+    \resumeItem{Contributed to the design and development of the microservices architecture, enabling easy deployment and maintenance.}
+  \resumeItemListEnd
+\vspace{-12pt}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects} 
+\vspace{-9pt}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+  {\textbf{HelpBot} $|$ \href{https://github.com/Anarvsingh/HelpBot}{\underline{View Project}}}
+  {React.js $|$ TypeScript $|$ Node.js $|$ AWS}
+  \\[5mm]
+\resumeItemListStart
+  \resumeItem{Developed a real-time AI chatbot with React.js and Node.js, integrating LangChain on AWS for scalable, low-latency responses in a distributed system.}
+  \resumeItem{Optimized performance with TypeScript and Convex, participating in iterative design reviews to ensure fault-tolerant, production-ready features.}
+  \resumeItem{Collaborated on architecture and test automation, delivering resilient solutions with reusable React.js components in an Agile workflow.}
+\resumeItemListEnd
+
+\vspace{-12pt}
+\resumeProjectHeading
+  {\textbf{SkillCheck} $|$ \href{https://github.com/Anarvsingh/SkillCheck2}{\underline{View Project}}}
+  {React.js $|$ TypeScript $|$ Node.js $|$ Docker}
+  \\[5mm]
+\resumeItemListStart
+  \resumeItem{Built a distributed platform with React.js microservices and Node.js, supporting \textbf{200+} users with real-time video features on AWS.}
+  \resumeItem{Implemented CI/CD with Docker, achieving sub-2-second performance via optimized algorithms, ensuring scalability and reliability.}
+  \resumeItem{Led integration of 4+ services, collaborating on test plans and code reviews to deliver robust, fault-tolerant solutions in a fast-paced setting.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{   
+    \textbf{Languages}: Java, SQL, JavaScript, Python, TypeScript, HTML5, CSS,  \\[1mm]
+    \textbf{Developer Tools}: AWS, Git, Splunk, Prometheus, Linux, Docker, Postman, Jira \\[1mm]
+    \textbf{Libraries/Frameworks}: Spring Boot, Node.js, PostgreSQL, REST API, React.js, Next.js, Tailwind CSS, Convex, Kafka \\[1mm]
+  }}
+\end{itemize}
+\vspace{-16pt}
+\vspace{3pt}
+\vspace{10pt}
+
+\vspace{-15pt}
+
+\end{document}
